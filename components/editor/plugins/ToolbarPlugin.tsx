@@ -146,34 +146,6 @@ export default function ToolbarPlugin() {
       </button>
       <Divider />
       <button
-        onClick={() => editor.update(() => toggleBlock('h1'))}
-        data-active={activeBlock === 'h1' ? '' : undefined}
-        className={
-          'toolbar-item spaced ' + (activeBlock === 'h1' ? 'active' : '')
-        }
-      >
-        <i className="format h1" />
-      </button>
-      <button
-        onClick={() => editor.update(() => toggleBlock('h2'))}
-        data-active={activeBlock === 'h2' ? '' : undefined}
-        className={
-          'toolbar-item spaced ' + (activeBlock === 'h2' ? 'active' : '')
-        }
-      >
-        <i className="format h2" />
-      </button>
-      <button
-        onClick={() => editor.update(() => toggleBlock('h3'))}
-        data-active={activeBlock === 'h3' ? '' : undefined}
-        className={
-          'toolbar-item spaced ' + (activeBlock === 'h3' ? 'active' : '')
-        }
-      >
-        <i className="format h3" />
-      </button>
-      <Divider />
-      <button
         onClick={() => {
           editor.dispatchCommand(FORMAT_TEXT_COMMAND, 'bold');
         }}
